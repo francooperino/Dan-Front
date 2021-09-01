@@ -1,0 +1,88 @@
+import React from 'react';
+import axios from 'axios';
+
+
+export async function getAllEmpleados() {
+  try {
+    return await axios.get("http://127.0.0.1:9004/api/sueldos/empleado");
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+
+export async function postDatoBancario(datoBancario, empleado) {
+  try {
+    const json = JSON.stringify({
+      nombreBanco: datoBancario.nombrebanco,
+      numeroCuenta: datoBancario.numerocuenta,
+      empleado: empleado
+    });
+    const res = await axios.post('http://localhost:9004/api/sueldos/empleado/datobancario', json, {
+      headers: {
+        // Overwrite Axios's automatically set Content-Type
+        'Content-Type': 'application/json'
+      }
+    });
+    return res;
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+
+export async function getDatoBancarioPorId(idDatoBancario) {
+  try {
+    return await axios.get("http://127.0.0.1:9004/api/sueldos/empleado/datobancario/"+idDatoBancario);
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+
+export async function getAllDatoBancario() {
+  try {
+    return await axios.get("http://127.0.0.1:9004/api/sueldos/empleado/datobancario");
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+
+export async function getAllDatoBancarioPorIdEmpleado(idEmpleado) {
+  try {
+    return await axios.get("http://127.0.0.1:9004/api/sueldos/empleado/datobancario?idEmpleado="+idEmpleado);
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+
+export async function removeDatoBancario(idDatoBancario) {
+  try {
+    return await axios.delete("http://127.0.0.1:9004/api/sueldos/empleado/datobancario/"+idDatoBancario);
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+
+export async function updateDatoBancario(datoBancario) {
+  try {
+    const json = JSON.stringify({
+      nombreBanco: datoBancario.nombreBanco,
+      numeroCuenta: datoBancario.numeroCuenta,
+      empleado: datoBancario.empleado
+    });
+    return await axios.put('http://127.0.0.1:9004/api/sueldos/empleado/datobancario/'+datoBancario.id, json, {
+      headers: {
+        // Overwrite Axios's automatically set Content-Type
+        'Content-Type': 'application/json'
+      }
+    });
+  } catch (error) {
+    console.log(error);
+    return -1;
+  }
+}
+

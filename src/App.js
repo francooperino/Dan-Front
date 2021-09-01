@@ -1,19 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
-import SucursalAlta from './domain/sucursal/alta-sucursal/SucursalAlta.js'
-import MenuSueldos from './domain/menu/MenuSueldos.js'
-import MostrarSucursal from './domain/sucursal/mostrar-sucursales/MostrarSucursal.js'
-import AltaDatoBancario from './domain/empleado/dato-bancario/alta-dato-bancario/AltaDatoBancario.js'
-import MostrarDatoBancario from './domain/empleado/dato-bancario/mostrar-datosBancarios/MostrarDatoBancario.js'
-import MostarSueldos from './domain/sueldo/MostrarSueldos'
-import CodigoDetalle from './domain/sueldo/codigoDetalle/CodigoDetalle'
+import SucursalAlta from './domain/microSueldos/sucursal/alta-sucursal/SucursalAlta.js'
+import MenuSueldos from './domain/microSueldos/menu/MenuSueldos.js'
+import MostrarSucursal from './domain/microSueldos/sucursal/mostrar-sucursales/MostrarSucursal.js'
+import AltaDatoBancario from './domain/microSueldos/empleado/dato-bancario/alta-dato-bancario/AltaDatoBancario.js'
+import MostrarDatoBancario from './domain/microSueldos/empleado/dato-bancario/mostrar-datosBancarios/MostrarDatoBancario.js'
+import MostarSueldos from './domain/microSueldos/sueldo/MostrarSueldos'
+import CodigoDetalle from './domain/microSueldos/sueldo/codigoDetalle/CodigoDetalle'
 
 function App() {
   return (

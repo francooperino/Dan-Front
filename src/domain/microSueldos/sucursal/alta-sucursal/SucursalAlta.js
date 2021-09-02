@@ -158,7 +158,7 @@ const SucursalAlta = () => {
                     borderRadius="5px"
                     boxShadow="dark-lg"
                     overflow="auto"
-                   
+      
                 >
                     <Heading size="2xl" align="center"
                         pt={2} pl={2} pr={2} mb={4}
@@ -233,7 +233,7 @@ const SucursalAlta = () => {
                         </Button>
                         <Button
                            variant="btnCancelar"
-                           onClick={()=>history.push("/")}
+                           onClick={()=>history.push("/empleado/menuSueldo")}
                         >
                             Atras
                         </Button>

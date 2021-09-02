@@ -54,6 +54,12 @@ const MenuSueldos = () => {
                             className="smaller-image" margin="auto"/></Link>
                     <Text className="text-image">Codigo Detalle</Text>
                 </Box>
+                <Box w="200px">
+                    <Link href="/empleado">
+                        <Image src="https://cdn-icons-png.flaticon.com/512/595/595018.png"
+                            className="smaller-image" margin="auto"/></Link>
+                    <Text className="text-image">Atras</Text>
+                </Box>
             </Stack>
 
         </Box>

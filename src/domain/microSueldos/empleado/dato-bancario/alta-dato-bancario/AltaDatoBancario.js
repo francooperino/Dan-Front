@@ -206,7 +206,7 @@ const AltaDatoBancario = () => {
                         </Button>
                         <Button
                             variant="btnCancelar"
-                            onClick={() => history.push("/")}
+                            onClick={() => history.push("/empleado/menuSueldo")}
                         >
                             Atras
                         </Button>

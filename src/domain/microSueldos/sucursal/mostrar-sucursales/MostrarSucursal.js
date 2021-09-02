@@ -224,7 +224,7 @@ const MostraSucursal = () => {
                         <Button
                             variant="btnCancelar"
                             letterSpacing= "widest"
-                            onClick={() => history.push("/")}
+                            onClick={() => history.push("/empleado/menuSueldo")}
                         >
                             Atras
                         </Button>

@@ -54,6 +54,12 @@ const MenuSueldos = () => {
                             className="smaller-image" margin="auto"/></Link>
                     <Text className="text-image">Gestion Producto</Text>
                 </Box>
+                <Box w="200px">
+                    <Link href="/">
+                        <Image src="https://cdn-icons-png.flaticon.com/512/2949/2949728.png"
+                            className="smaller-image" margin="auto"/></Link>
+                    <Text className="text-image">Cerrar Sesion</Text>
+                </Box>
             </Stack>
 
         </Box>

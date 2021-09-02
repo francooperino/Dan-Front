@@ -1,6 +1,8 @@
 import axios from "axios";
 import { saveAs } from "file-saver";
 
+const urlReporteRecibo="http://zuul:8081/reportes/"
+const urlReciboSueldo="http://zuul:8081/reciboSueldo/"
 
 export async function downloadRecibo(recibo) {
   const current = new Date();
@@ -10,9 +12,10 @@ export async function downloadRecibo(recibo) {
   saveAs(blob,  "ReciboSueldo_" +date+ "_id-" + recibo.id)
 }
 
+
 async function getDownloadRecibo(idRecibo) {
   return axios.get(
-    "http://127.0.0.1:9014/api/sueldos/reportes/recibosueldo/" + parseInt(idRecibo),
+    urlReporteRecibo+"recibosueldo/" + parseInt(idRecibo),
     {
     headers: {
       'Content-Type': 'multipart/form-data'
@@ -86,7 +89,9 @@ export const cabeceraTablaDetalleSueldo = [
 export async function getAllSueldosData(){
    try{
   return await axios.get(
-      "http://127.0.0.1:9014/api/sueldos/recibosueldo"
+    urlReciboSueldo,{
+      headers: {"Access-Control-Allow-Origin": "*"}
+    }
     );
   } catch (error){
     console.log(error);

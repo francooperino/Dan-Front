@@ -105,7 +105,7 @@ const ClientesBusqueda = ({ filter, actualizarFiltro }) => {
     evt.preventDefault();
     const nuevoValor = evt.target.value;
     setSelector(nuevoValor);
-    const ruta="http://localhost:9010/api/cliente/";
+    const ruta="http://zuul:8081/cliente/";
     switch (nuevoValor) {
       case "Cuit": {
         setPath(ruta+"obtenerCliente/");

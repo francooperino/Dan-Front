@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+const urlSuc="http://zuul:8081/sucursal/"
+const urlEmpl="http://zuul:8081/sueldoEmpleado/"
 export async function postSucursal(unaSucursal,empleadosAsociados){
     try {
         let empleado = {
@@ -21,7 +23,7 @@ export async function postSucursal(unaSucursal,empleadosAsociados){
             direccion: unaSucursal.direccion,
             empleados: listEmpleados
         });
-        const res = await axios.post('http://localhost:9004/api/sueldos/sucursal', json, {
+        const res = await axios.post(urlSuc, json, {
           headers: {
             // Overwrite Axios's automatically set Content-Type
             'Content-Type': 'application/json'
@@ -36,7 +38,7 @@ export async function postSucursal(unaSucursal,empleadosAsociados){
 
 export async function getAllSucursales(){
   try {
-    return await axios.get( "http://localhost:9004/api/sueldos/sucursal");
+    return await axios.get(urlSuc);
   } catch (error) {
       console.log(error);
       return -1;
@@ -45,7 +47,7 @@ export async function getAllSucursales(){
 export async function getSucursalPorId(idSucursal){
   try {
     console.log("Solicitud a: http://localhost:9004/api/sueldos/sucursal/"+idSucursal);
-    return await axios.get( "http://localhost:9004/api/sueldos/sucursal/"+ idSucursal);
+    return await axios.get( urlSuc+ idSucursal);
   } catch (error) {
       console.log(error);
       return -1;
@@ -54,7 +56,7 @@ export async function getSucursalPorId(idSucursal){
 
 export async function getAllEmpleadosDisponibles(){
   try {
-    return await axios.get( "http://127.0.0.1:9004/api/sueldos/empleado/empleadosNoAsociadosSucursal");
+    return await axios.get(urlEmpl+"empleadosNoAsociadosSucursal");
   } catch (error) {
       console.log(error);
       return -1;
@@ -63,7 +65,7 @@ export async function getAllEmpleadosDisponibles(){
 
 export async function removeSucursal(idSucursal){
   try {
-    return await axios.delete("http://127.0.0.1:9004/api/sueldos/sucursal/"+idSucursal);
+    return await axios.delete(urlSuc+idSucursal);
   } catch (error) {
       console.log(error);
       return -1;
@@ -77,7 +79,7 @@ export async function updateSucursal(sucursal){
     direccion: sucursal.direccion
 });
   try {
-    return await axios.put('http://127.0.0.1:9004/api/sueldos/sucursal/'+sucursal.id, json, {
+    return await axios.put(urlSuc+sucursal.id, json, {
       headers: {
         // Overwrite Axios's automatically set Content-Type
         'Content-Type': 'application/json'

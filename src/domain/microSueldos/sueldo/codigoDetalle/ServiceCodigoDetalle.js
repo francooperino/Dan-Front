@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const server = "http://127.0.0.1:9014/";
-const apiRest = "api/sueldos/recibosueldo/codigodetalle/";
+const server = "http://zuul:8081/";
+const apiRest = "reciboSueldo/codigodetalle/";
 
 export async function getAllCodigoDetalle() {
   try {

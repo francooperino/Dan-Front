@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
-const urlSuc="http://zuul:8081/sucursal/"
-const urlEmpl="http://zuul:8081/sueldoEmpleado/"
+const urlSuc="http://127.0.0.1:8081/sucursal/"
+const urlEmpl="http://127.0.0.1:8081/sueldoEmpleado/"
 export async function postSucursal(unaSucursal,empleadosAsociados){
     try {
         let empleado = {

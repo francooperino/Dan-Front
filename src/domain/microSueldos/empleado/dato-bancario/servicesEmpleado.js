@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 
-const url="http://zuul:8081/sueldoEmpleado";
+const url="http://127.0.0.1:8081/sueldoEmpleado";
 
 export async function getAllEmpleados() {
   try {

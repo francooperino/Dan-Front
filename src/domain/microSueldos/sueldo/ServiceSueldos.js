@@ -1,8 +1,8 @@
 import axios from "axios";
 import { saveAs } from "file-saver";
 
-const urlReporteRecibo="http://zuul:8081/reportes/"
-const urlReciboSueldo="http://zuul:8081/reciboSueldo/"
+const urlReporteRecibo="http://127.0.0.1:8081/reportes/"
+const urlReciboSueldo="http://127.0.0.1:8081/reciboSueldo/"
 
 export async function downloadRecibo(recibo) {
   const current = new Date();

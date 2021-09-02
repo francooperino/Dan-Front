@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const server = "http://zuul:8081/";
+const server = "http://127.0.0.1:8081/";
 const apiRest = "reciboSueldo/codigodetalle/";
 
 export async function getAllCodigoDetalle() {

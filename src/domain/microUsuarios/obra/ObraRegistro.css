@@ -1,0 +1,36 @@
+*{
+    background-size:100% 130%;
+  }
+.fondo{
+    background-image: url("https://wallpaperaccess.com/full/773716.jpg");
+}
+#latlong{
+    width: 25%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: white;
+    margin: 0px 13px 10px;
+}
+
+.botons{
+    width: 100%;
+    background:#1f53c5;
+    border: none;
+    padding: 6px;
+    color: white;
+    margin: 6px 0; 
+}
+
+.asd{
+    background: #24303c;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}

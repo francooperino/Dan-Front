@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: none;
+}
+
+
+ 
+.form-register{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color:white;
+    margin: 20px 0;
+}
+
+.controls{
+    display: flex;
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1 px solid #1f53c5;
+}
+
+.form-register .botons{ /*Cuando queres editar todos los botos dentro del form register*/
+    width: 100%;
+    background:#1f53c5;
+    border: none;
+    padding: 6px;
+    color: white;
+    margin: 6px 0; 
+}
+
+.form-register li::marker { /*Cuando queres editar un elemento en particular*/
+    display:none;
+    color: #24303c;
+}
+
+.form-register li label {
+    width: 40%;
+    background: #24303c;
+}
+
+.form-register .fifty-fifty{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #24303c;
+}
+
+.form-register  .fifty-fifty-botons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #1f53c5;
+}
+
+.form-register .fifty-fifty-botons button{
+    margin: 0 10px 0 10px;
+    background: #1f53c5;
+    padding: 12px;
+    color: white;
+    border: none;
+}
+button{
+  
+    background: #1f53c5;
+    padding: 12px;
+    color: white;
+    border: none;
+}
+
+.panelFormAlta {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.form-register .fifty-fifty input {
+    background: #24303c;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    background-color: #24303c;
+}
+
+.controls2 {
+    display: flex;
+}
+.newInput{
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: white;
+}

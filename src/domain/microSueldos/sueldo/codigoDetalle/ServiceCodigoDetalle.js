@@ -70,11 +70,6 @@ export async function actualizarCodigoDetalle(id,codigoDetalle,descripcion,haber
 }
 
 export async function guardarCodigoDetalle(codigoDetalle,descripcion,haber,porcentaje) {
-console.log(codigoDetalle);
-debugger;
-console.log(descripcion);
-console.log(haber);
-console.log(porcentaje);
   try {
     return await axios.post(server + apiRest,{
       "codigoDetalle": codigoDetalle,

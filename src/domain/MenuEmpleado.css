@@ -1,0 +1,15 @@
+.smaller-image {
+    width: 100px;
+    border-radius: 50%;
+    background: #24303c;
+    border: white 5px solid;
+    margin: 0 40px 0 40px;
+}
+
+.text-image {
+    text-align: center;
+    color:white; 
+    font-size: x-large;
+    font-weight:bold;
+
+}

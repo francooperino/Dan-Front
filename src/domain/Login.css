@@ -1,0 +1,51 @@
+
+
+.form-register{
+    width:400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin:auto;
+    margin-top: 100px;
+    
+}
+
+.controls{
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: white;
+}
+
+.select{
+
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    color: white;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color:white;
+
+}
+
+
+
+#myh4{
+    background: #24303c;
+}
+
+.center{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}

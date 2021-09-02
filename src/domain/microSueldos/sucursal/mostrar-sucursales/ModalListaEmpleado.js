@@ -58,7 +58,6 @@ export const ModalListaEmpleado = ({ isOpen, setIsOpen, dataEmpleados }) => {
                                     </Thead>
                                     <Tbody>
                                         {dataEmpleados.map((elemento) => {
-                                            debugger;
                                             return (
                                                 <Tr key={elemento.id}>
                                                     <Td isNumeric>{elemento.id}</Td>
